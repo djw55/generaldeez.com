@@ -27,8 +27,10 @@
     .page { position: relative; z-index: 1; width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 18px 0 36px; }
     .banner {
       width: 100%;
-      height: 180px;
-      background: #111 url("assets/tanggang-banner.jpg") center / cover no-repeat;
+      height: auto;
+      aspect-ratio: 1024 / 473;
+      object-fit: cover;
+      object-position: center;
       margin-bottom: 22px;
     }
     header { text-align: center; margin-bottom: 22px; }
@@ -72,13 +74,12 @@
     @media (max-width: 800px) {
       .top { grid-template-columns: repeat(3, 1fr); }
       .more { grid-template-columns: repeat(4, 1fr); }
-      .banner { height: 110px; }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="banner" aria-hidden="true"></div>
+    <img class="banner" src="assets/tanggang-banner.jpg?v=strip" alt="" aria-hidden="true" />
     <header>
       <h1>GENERAL DEEZ</h1>
       <div class="eth">generaldeez.eth</div>
@@ -219,7 +220,6 @@
       <img src="assets/grid/c087.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c226.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c019.jpg" alt="" loading="lazy" />
-      <img src="assets/grid/c142.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c380.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c115.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c216.jpg" alt="" loading="lazy" />
@@ -660,6 +660,7 @@
     </div>
     <footer>© 2026 @generaldeeez</footer>
   </div>
-  <span class="site-version" aria-hidden="true">v.20260823-1018</span>
+  <span class="site-version" aria-hidden="true"></span>
+  <script src="version.js" defer></script>
 </body>
 </html>
