@@ -70,7 +70,16 @@
       gap: 4px;
     }
     footer { margin-top: 22px; text-align: center; font-size: 11px; color: #c9b89a; }
-    .site-version { position: fixed; right: 8px; bottom: 8px; font-size: 10px; color: rgba(254,222,121,.35); }
+    .site-version {
+      position: fixed;
+      right: 8px;
+      bottom: 8px;
+      z-index: 5;
+      pointer-events: none;
+      font-size: 10px;
+      color: rgba(254,222,121,.85);
+      text-shadow: 0 0 4px #000, 0 1px 2px #000;
+    }
     @media (max-width: 800px) {
       .top { grid-template-columns: repeat(3, 1fr); }
       .more { grid-template-columns: repeat(4, 1fr); }
@@ -660,7 +669,16 @@
     </div>
     <footer>© 2026 @generaldeeez</footer>
   </div>
-  <span class="site-version" aria-hidden="true"></span>
+  <span class="site-version" id="site-version" aria-hidden="true"></span>
   <script src="version.js" defer></script>
+  <script>
+    fetch("version.json", { cache: "no-store" })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var el = document.getElementById("site-version");
+        if (el && d && d.version) el.textContent = "v." + d.version;
+      })
+      .catch(function () {});
+  </script>
 </body>
 </html>
