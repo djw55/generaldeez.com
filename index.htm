@@ -25,13 +25,34 @@
     a:hover { color: #fff; }
     img { display: block; width: 100%; }
     .page { position: relative; z-index: 1; width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 18px 0 36px; }
-    .banner {
+    .banner-wrap {
+      position: relative;
       width: 100%;
-      height: auto;
-      aspect-ratio: 1024 / 473;
-      object-fit: cover;
-      object-position: center;
+      aspect-ratio: 1024 / 448;
       margin-bottom: 22px;
+    }
+    .banner-wrap .banner {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      margin: 0;
+    }
+    .banner-x {
+      position: absolute;
+      left: 0.5%;
+      top: 1.2%;
+      width: 22%;
+      height: 13%;
+      z-index: 2;
+      overflow: hidden;
+      color: transparent;
+      font-size: 1px;
+    }
+    .banner-x:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
+      color: transparent;
     }
     header { text-align: center; margin-bottom: 22px; }
     h1 {
@@ -83,12 +104,16 @@
     @media (max-width: 800px) {
       .top { grid-template-columns: repeat(3, 1fr); }
       .more { grid-template-columns: repeat(4, 1fr); }
+      .banner-x { width: 34%; height: 22%; min-height: 40px; }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <img class="banner" src="assets/tanggang-banner.jpg?v=strip" alt="" aria-hidden="true" />
+    <div class="banner-wrap">
+      <img class="banner" src="assets/tanggang-banner.jpg?v=strip" alt="" />
+      <a class="banner-x" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">LIKE/SUBSCRIBE on X</a>
+    </div>
     <header>
       <h1>GENERAL DEEZ</h1>
       <div class="eth">generaldeez.eth</div>
