@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>General Deez</title>
+  <meta name="description" content="generaldeez.eth. Chet 55. Things I made. Things I hold." />
+  <link rel="icon" href="assets/tangbeard.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#f4ecd8; --gold:#fede79; --orange:#ff6a00; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); }
+    body {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      background: #2a1810 url("assets/chia-wash.jpg") center / cover fixed no-repeat;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: rgba(8,4,2,.42);
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: #fff; }
+    img { display: block; width: 100%; }
+    .page { position: relative; z-index: 1; width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 18px 0 36px; }
+    .banner {
+      width: 100%;
+      height: 180px;
+      background: #111 url("assets/tanggang-banner.jpg") center / cover no-repeat;
+      margin-bottom: 22px;
+    }
+    header { text-align: center; margin-bottom: 22px; }
+    h1 {
+      font-family: "Black Ops One", sans-serif;
+      font-size: clamp(52px, 13vw, 100px);
+      letter-spacing: .08em; margin: 0; line-height: .92;
+      color: #fff6c4;
+      -webkit-text-stroke: 1px rgba(255, 180, 40, .55);
+      text-shadow:
+        0 0 2px #fff,
+        0 0 10px #fede79,
+        0 0 22px #ff6a00,
+        0 0 42px rgba(255,106,0,.7),
+        0 3px 0 #3a1400;
+    }
+    .eth { color: var(--gold); margin-top: 8px; font-size: 15px; letter-spacing: .04em; }
+    .sub { color: #ffe7c4; margin-top: 6px; font-size: 12px; }
+    .line { margin: 12px auto 0; max-width: 50ch; font-size: 13px; color: #ffe7c4; text-shadow: 0 1px 6px #000; }
+    .links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .btn {
+      padding: 8px 14px; border: 1px solid var(--gold);
+      font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+      background: rgba(0,0,0,.4);
+    }
+    .btn.hot { background: var(--orange); color: #111; border-color: var(--orange); }
+    .top {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .top img, .more img { aspect-ratio: 1; object-fit: cover; }
+    .more {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 4px;
+    }
+    footer { margin-top: 22px; text-align: center; font-size: 11px; color: #c9b89a; }
+    .site-version { position: fixed; right: 8px; bottom: 8px; font-size: 10px; color: rgba(254,222,121,.35); }
+    @media (max-width: 800px) {
+      .top { grid-template-columns: repeat(3, 1fr); }
+      .more { grid-template-columns: repeat(4, 1fr); }
+      .banner { height: 110px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="banner" aria-hidden="true"></div>
+    <header>
+      <h1>GENERAL DEEZ</h1>
+      <div class="eth">generaldeez.eth</div>
+      <div class="sub">@generaldeeez · Chet 55</div>
+      <p class="line">I make things and I hold them. Here's a bunch of shit I own (or just like). All praise to the most high.</p>
+      <div class="links">
+        <a class="btn hot" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">X</a>
+        <a class="btn" href="https://mintgarden.io/profile/chet-55-1fcf7141ed390171a8bf36d13678387fb2f68fb85d5db982ebcad4dbce08ad00" target="_blank" rel="noreferrer">MintGarden</a>
+      </div>
+    </header>
+    <div class="top">
+      <img src="assets/tile-me.jpg" alt="Me" />
+      <img src="assets/tile-general.jpg" alt="The General" />
+      <img src="assets/fit-plankbill.jpg" alt="Plankbill" />
+      <img src="assets/fit-punk.jpg" alt="Punk" />
+      <img src="assets/fit-hoa.jpg" alt="HOA" />
+      <img src="assets/fit-chad.jpg" alt="Chad" />
+      <img src="assets/tile-masaru.jpg" alt="Masaru" />
+      <img src="assets/fit-batman.jpg" alt="Batman" />
+      <img src="assets/fit-viper.jpg" alt="Viper" />
+      <img src="assets/tile-chimurai.jpg" alt="The Chimurai" />
+      <img src="assets/oldcar.webp" alt="Old car" />
+      <img src="assets/grid/p000.jpg" alt="" />
+    </div>
+    <div class="more">
+      <img src="assets/grid/c188.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c221.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c083.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c305.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c243.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c112.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c138.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c128.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n005.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c272.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c387.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e016.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c357.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c245.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c146.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n015.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e088.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c144.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c269.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c396.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c258.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p007.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c135.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c231.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c331.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c018.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c170.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c293.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p010.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e050.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c075.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c187.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e026.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c176.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e041.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c001.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c284.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c369.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c101.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c307.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c017.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c373.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c303.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e066.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c064.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e069.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n039.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c346.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c328.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e000.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c118.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e028.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c308.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e083.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c366.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c372.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e063.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c089.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p008.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c193.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c283.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c013.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c065.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c251.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e001.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c271.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e027.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c358.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c232.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p009.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c371.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c304.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c080.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c181.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e059.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c141.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c315.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c263.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n006.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p011.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c334.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c210.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c088.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c290.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c209.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p018.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e030.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c113.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e034.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c078.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e021.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c327.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c029.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c098.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c317.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c103.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e009.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c122.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c044.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c376.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c379.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e070.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c310.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e008.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c183.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e056.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c319.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c159.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c278.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c139.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e062.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c246.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c087.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c226.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c019.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c142.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c380.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c115.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c216.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c364.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c003.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c117.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c156.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c332.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c215.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c241.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n042.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c028.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c354.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c081.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c166.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c153.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n027.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c162.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c100.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c150.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c192.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c168.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c242.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e060.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c325.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e054.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c009.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n037.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e014.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c033.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c072.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c367.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c295.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e051.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p013.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e047.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c136.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e005.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c007.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e007.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c312.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e061.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c086.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e048.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c124.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c353.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c069.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c109.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n038.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c294.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n010.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p014.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n016.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c076.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n012.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c032.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e040.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c108.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e081.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c301.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c282.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c208.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e084.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c014.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c059.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n002.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e039.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c288.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e043.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n031.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c314.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c198.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c000.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e082.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c160.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c211.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n029.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c114.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c302.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e077.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c287.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c264.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c326.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c046.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e036.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n009.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c197.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c096.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c145.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c143.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e055.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c194.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c050.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c218.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c099.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c223.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e090.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c397.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e064.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n021.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e076.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n034.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c220.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c374.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c248.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c274.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n033.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c073.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c120.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c023.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c130.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c179.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c190.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e003.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c347.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c389.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c045.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c004.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c056.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c165.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c021.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c189.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c311.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n017.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c360.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c289.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c090.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c338.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e018.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c240.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c154.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c051.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n035.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c236.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e013.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c355.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c392.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c137.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e057.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c330.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c277.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c067.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c259.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c201.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n026.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e024.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c091.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c255.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p015.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c048.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c116.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c286.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c068.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c268.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c147.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c186.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c262.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c391.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c362.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c066.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n025.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c350.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c040.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n007.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p003.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c024.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c063.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c053.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c233.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e017.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c127.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n019.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c016.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n014.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c025.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c297.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c185.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p002.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c039.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c204.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c254.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c037.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c363.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c132.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c030.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e052.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c134.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e089.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c015.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c320.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c329.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n018.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c057.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n001.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c228.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n013.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c212.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p016.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c092.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c169.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c336.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c222.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n000.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c359.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n036.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c306.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e080.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c038.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c280.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n020.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c071.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n008.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c055.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c244.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n023.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p005.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c214.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c052.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c027.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c394.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c043.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n024.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c249.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p004.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c285.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c299.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c167.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c060.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c121.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c381.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p012.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c022.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e042.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c161.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c002.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c006.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c239.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c026.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c340.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c010.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c281.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n004.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c385.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e073.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c313.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c020.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e037.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c356.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c058.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n040.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c261.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c349.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c298.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c370.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c395.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c270.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c252.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c388.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e044.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c149.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p019.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c031.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e011.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c196.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e025.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c126.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e006.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c247.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e086.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c386.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e065.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c224.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c085.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c097.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c227.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c318.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e074.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c393.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c094.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c205.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c375.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n045.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e071.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c155.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c229.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e038.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c129.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e085.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c131.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c164.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e035.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n030.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c235.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e029.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c133.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e010.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c335.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e053.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c105.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c342.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c049.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c163.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e075.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c253.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c104.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p006.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e022.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c111.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c219.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c034.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c079.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c351.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c140.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c213.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e072.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c174.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c365.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c361.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n041.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c316.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c343.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c158.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c382.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c199.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c036.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c322.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c344.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e020.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c300.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c273.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c107.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c256.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c148.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c125.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c084.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c011.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c260.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c225.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c265.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c267.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c323.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c195.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e031.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c309.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p017.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c175.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c377.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c157.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c074.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c005.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c276.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c368.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p001.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c206.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c180.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c378.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c234.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e058.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c008.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c151.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c172.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c123.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c217.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n003.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c203.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e019.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c291.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c054.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e046.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c333.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e012.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c077.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c152.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c200.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c177.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c119.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e067.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c275.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e068.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c106.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e045.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c292.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e049.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c207.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e078.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n032.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c341.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c178.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c321.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c257.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e004.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c230.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c102.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e087.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c337.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n011.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c082.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n022.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c238.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c384.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e002.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c324.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c390.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c061.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e023.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c042.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c070.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c250.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c383.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e079.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c012.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e032.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c047.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c352.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c062.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c191.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c035.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c266.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c095.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c171.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c110.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c041.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c184.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n043.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c237.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n044.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c173.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c339.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c202.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c182.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c279.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c296.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/n028.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c345.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c093.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e033.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/c348.jpg" alt="" loading="lazy" />
+    </div>
+    <footer>© 2026 @generaldeeez</footer>
+  </div>
+  <span class="site-version" aria-hidden="true">v.20260823-1018</span>
+</body>
+</html>

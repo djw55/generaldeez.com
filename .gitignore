@@ -1,0 +1,21 @@
+﻿# Deploy — local config + secrets stay out of the repo
+deploy.local.ps1
+deploy.secrets.ps1
+
+# Secrets
+.env
+.env.*
+*.ppk
+*.pem
+*.key
+id_rsa*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.log
+.vscode/
+.idea/
+.cursor/

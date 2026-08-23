@@ -1,0 +1,8 @@
+DirectoryIndex index.htm
+Options -Indexes
+FallbackResource /index.php
+<IfModule mod_headers.c>
+  <FilesMatch "\.(htm|html|php)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
