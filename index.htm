@@ -3,6 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-62T0XLDHJB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-62T0XLDHJB');
+  </script>
   <title>General Deez</title>
   <meta name="description" content="generaldeez.eth. Chet 55. Things I made. Things I hold." />
   <link rel="icon" href="assets/tangbeard.webp" type="image/webp" />
@@ -24,14 +32,23 @@
     a { color: var(--gold); text-decoration: none; }
     a:hover { color: #fff; }
     img { display: block; width: 100%; }
-    .page { position: relative; z-index: 1; width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 18px 0 36px; }
+    .page { position: relative; z-index: 1; width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 12px 0 36px; }
+    /* Banner + title share one width: strip tracks title text (img out of flow so it can't widen). */
+    .hero {
+      width: max-content;
+      max-width: 100%;
+      margin: 0 auto 14px;
+    }
     .banner-wrap {
       position: relative;
-      width: 90%;
+      width: 100%;
       aspect-ratio: 1024 / 473;
-      margin: 0 auto 22px;
+      margin: 0 0 10px;
+      min-width: 0;
     }
     .banner-wrap .banner {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -54,11 +71,14 @@
       outline-offset: 2px;
       color: transparent;
     }
-    header { text-align: center; margin-bottom: 22px; }
+    header { text-align: center; margin-bottom: 0; }
     h1 {
       font-family: "Black Ops One", sans-serif;
-      font-size: clamp(52px, 13vw, 100px);
+      font-size: clamp(38px, 8.8vw, 76px);
       letter-spacing: .08em; margin: 0; line-height: .92;
+      white-space: nowrap;
+      width: max-content;
+      max-width: 100%;
       color: #fff6c4;
       -webkit-text-stroke: 1px rgba(255, 180, 40, .55);
       text-shadow:
@@ -68,10 +88,10 @@
         0 0 42px rgba(255,106,0,.7),
         0 3px 0 #3a1400;
     }
-    .eth { color: var(--gold); margin-top: 8px; font-size: 15px; letter-spacing: .04em; }
-    .sub { color: #ffe7c4; margin-top: 6px; font-size: 12px; }
-    .line { margin: 12px auto 0; max-width: 50ch; font-size: 13px; color: #ffe7c4; text-shadow: 0 1px 6px #000; }
-    .links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .eth { color: var(--gold); margin-top: 6px; font-size: 14px; letter-spacing: .04em; }
+    .sub { color: #ffe7c4; margin-top: 4px; font-size: 12px; }
+    .line { margin: 10px auto 0; max-width: 42ch; font-size: 12px; color: #ffe7c4; text-shadow: 0 1px 6px #000; }
+    .links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
     .btn {
       padding: 8px 14px; border: 1px solid var(--gold);
       font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
@@ -106,26 +126,33 @@
       .more { grid-template-columns: repeat(4, 1fr); }
       .banner-x { width: 34%; height: 22%; min-height: 40px; }
     }
+    @media (max-width: 380px) {
+      h1 { white-space: normal; letter-spacing: .05em; font-size: clamp(32px, 11vw, 42px); }
+      .hero { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="banner-wrap">
-      <img class="banner" src="assets/tanggang-banner.jpg?v=strip" alt="" />
-      <a class="banner-x" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">LIKE/SUBSCRIBE on X</a>
-    </div>
-    <header>
-      <h1>GENERAL DEEZ</h1>
-      <div class="eth">generaldeez.eth</div>
-      <div class="sub">@generaldeeez · Chet 55</div>
-      <p class="line">I make things and I hold them. Here's a bunch of shit I own (or just like). All praise to the most high.</p>
-      <div class="links">
-        <a class="btn hot" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">X</a>
-        <a class="btn" href="https://mintgarden.io/profile/chet-55-1fcf7141ed390171a8bf36d13678387fb2f68fb85d5db982ebcad4dbce08ad00" target="_blank" rel="noreferrer">MintGarden</a>
+    <div class="hero">
+      <div class="banner-wrap">
+        <img class="banner" src="assets/tanggang-banner.jpg?v=strip" alt="" />
+        <a class="banner-x" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">LIKE/SUBSCRIBE on X</a>
       </div>
-    </header>
-    <div class="top">
+      <header>
+        <h1>GENERAL DEEZ</h1>
+        <div class="eth">generaldeez.eth</div>
+        <div class="sub">@generaldeeez · Chet 55</div>
+        <p class="line">I make things and I hold them. Here's a bunch of shit I own (or just like). All praise to the most high.</p>
+        <div class="links">
+          <a class="btn hot" href="https://x.com/generaldeeez" target="_blank" rel="noreferrer">X</a>
+          <a class="btn" href="https://mintgarden.io/profile/chet-55-1fcf7141ed390171a8bf36d13678387fb2f68fb85d5db982ebcad4dbce08ad00" target="_blank" rel="noreferrer">MintGarden</a>
+        </div>
+      </header>
+    </div>
+        <div class="top">
       <img src="assets/tile-me.jpg" alt="Me" />
+      <img src="assets/tile-stuart.jpg" alt="Stuart Scar" />
       <img src="assets/tile-general.jpg" alt="The General" />
       <img src="assets/fit-plankbill.jpg" alt="Plankbill" />
       <img src="assets/fit-punk.jpg" alt="Punk" />
@@ -136,7 +163,6 @@
       <img src="assets/fit-viper.jpg" alt="Viper" />
       <img src="assets/tile-chimurai.jpg" alt="The Chimurai" />
       <img src="assets/oldcar.webp" alt="Old car" />
-      <img src="assets/grid/p000.jpg" alt="" />
     </div>
     <div class="more">
       <img src="assets/grid/c188.jpg" alt="" loading="lazy" />
@@ -691,7 +717,10 @@
       <img src="assets/grid/c093.jpg" alt="" loading="lazy" />
       <img src="assets/grid/e033.jpg" alt="" loading="lazy" />
       <img src="assets/grid/c348.jpg" alt="" loading="lazy" />
-    </div>
+          <img src="assets/grid/c142.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/e015.jpg" alt="" loading="lazy" />
+      <img src="assets/grid/p000.jpg" alt="" loading="lazy" />
+</div>
     <footer>© 2026 @generaldeeez</footer>
   </div>
   <span class="site-version" id="site-version" aria-hidden="true"></span>
